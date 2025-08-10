@@ -43,7 +43,7 @@ Here’s how to run them without internet access:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome:  
 - New TTS voices for Ghanaian languages  
@@ -54,7 +54,7 @@ To contribute, please open an issue or submit a pull request.
 
 ---
 
-## 📜 License
+## License
 
 All Kasanoma models are released under open-source licenses.  
 Check the model folder for license details before using in commercial projects.
