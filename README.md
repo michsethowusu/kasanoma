@@ -56,6 +56,5 @@ To contribute, please open an issue or submit a pull request.
 
 ## License
 
-All Kasanoma models are released under open-source licenses.  
-Check the model folder for license details before using in commercial projects.
+All Kasanoma models are released under open-source licenses.
 
