@@ -5,6 +5,8 @@ With Kasanoma, you can generate natural-sounding Ghanaian voices entirely on you
 
 All models in this project are built using [Piper](https://github.com/rhasspy/piper), a fast, lightweight neural TTS system that runs efficiently on laptops, desktops, Raspberry Pi, and other low-resource devices.
 
+You can also try out the models live online at our [Kasanoma demo site](https://kasanoma.onrender.com/).
+
 ---
 
 ## Available Models
