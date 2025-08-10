@@ -7,20 +7,17 @@ All models in this project are built using [Piper](https://github.com/rhasspy/pi
 
 ---
 
-## 📢 Available Models
+## Available Models
 
 Currently, we provide models for **Twi (Akan)**:
-
-| Language   | Model Name          | Download Link           | Sample Audio           |
-|------------|---------------------|-------------------------|------------------------|
-| Twi (Akan) | kasanoma-twi | [Download](LINK_TO_MODEL) | [Listen](https://kasanoma.onrender.com)
+You can donwload them from the releases - https://github.com/michsethowusu/kasanoma/releases
 
 > More Ghanaian languages will be added soon — including Ewe, Ga, Dagbani, and others.  
 > We welcome community contributions.
 
 ---
 
-## 🚀 How to Use the Models Offline
+## How to Use the Models Offline
 
 All Kasanoma models are compatible with [Piper](https://github.com/rhasspy/piper).  
 Here’s how to run them without internet access:
@@ -43,14 +40,6 @@ Here’s how to run them without internet access:
    ```
    This will generate `audio.wav` with natural Twi speech — fully offline.
 
----
-
-## 💡 Tips for Best Results
-
-- **Use UTF-8 text** – Piper models expect UTF-8 encoded input.
-- **Add punctuation** – Helps the model insert natural pauses.
-- **Phonetic spelling** – For unusual words or names, try writing them as they sound.
-- **Run locally** – No data leaves your device; perfect for privacy and low-connectivity areas.
 
 ---
 
@@ -70,9 +59,3 @@ To contribute, please open an issue or submit a pull request.
 All Kasanoma models are released under open-source licenses.  
 Check the model folder for license details before using in commercial projects.
 
----
-
-## 🌍 About Kasanoma
-
-*Kasanoma* means *"language"* in Akan.  
-This project was created to ensure **Ghanaian languages have high-quality, offline AI voices** — for education, accessibility, cultural preservation, and creativity.
