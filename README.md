@@ -12,7 +12,7 @@ You can also try out the models live online at our [demo site](https://kasanoma.
 ## Available Models
 
 Currently, we provide models for **Twi (Akan)**:
-You can donwload them from the releases - https://github.com/michsethowusu/kasanoma/releases
+You can download them from the [releases](https://github.com/michsethowusu/kasanoma/releases).
 
 > More Ghanaian languages will be added soon — including Ewe, Ga, Dagbani, and others.  
 > We welcome community contributions.
