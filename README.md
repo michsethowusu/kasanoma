@@ -51,7 +51,7 @@ We welcome contributions in the form of:
 - Training new models for other languages of Africa. All the knowledge from training models is open source and will be shared freely to support you.  
 - Audio quality testing and pronunciation feedback.  
 
-To contribute, please contact me on LinkedIn - https://www.linkedin.com/in/mich-seth-owusu/
+To contribute, please contact me on [LinkedIn](https://www.linkedin.com/in/mich-seth-owusu).
 
 ---
 
