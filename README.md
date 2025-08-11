@@ -1,4 +1,4 @@
-# Kasanoma – Offline TTS Models for Ghanaian Languages
+# Kasanoma – Offline TTS Models for languages of Africa
 
 **Kasanoma** is an open-source initiative dedicated to building and sharing **offline** high-quality **Text-to-Speech (TTS)** models for languages of Africa.  
 With Kasanoma models, you can generate natural-sounding Ghanaian voices entirely on your local device — **no internet connection required**.
