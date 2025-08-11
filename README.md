@@ -11,8 +11,8 @@ You can also try out the models live online at our [demo site](https://kasanoma.
 
 ## Available Models
 
-Currently, we provide models for **Twi (Akan)**:
-You can download them from the [releases](https://github.com/michsethowusu/kasanoma/releases).
+Currently, we provide a model for **Twi (Akan)**:
+You can download the model from [releases](https://github.com/michsethowusu/kasanoma/releases).
 
 > More African languages will be added soon.  
 > We welcome community contributions.
