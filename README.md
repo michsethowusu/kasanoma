@@ -1,7 +1,7 @@
-# Kasanoma – Offline TTS Models for Ghanaian Languages
+# Kasanoma – Offline TTS Models for languages of Africa
 
-**Kasanoma** is an open-source initiative dedicated to building and sharing **offline** high-quality **Text-to-Speech (TTS)** models for Ghanaian languages.  
-With Kasanoma, you can generate natural-sounding Ghanaian voices entirely on your local device — **no internet connection required**.
+**Kasanoma** is an open-source initiative dedicated to building and sharing **offline** high-quality **Text-to-Speech (TTS)** models for languages of Africa.  
+With Kasanoma models, you can generate natural-sounding voices entirely on your local device — **no internet connection required**.
 
 All models in this project are built using [Piper](https://github.com/rhasspy/piper), a fast, lightweight neural TTS system that runs efficiently on laptops, desktops, Raspberry Pi, and other low-resource devices.
 
@@ -11,10 +11,10 @@ You can also try out the models live online at our [demo site](https://kasanoma.
 
 ## Available Models
 
-Currently, we provide models for **Twi (Akan)**:
-You can download them from the [releases](https://github.com/michsethowusu/kasanoma/releases).
+Currently, we provide a model for **Twi (Akan)**:
+You can download the model from [releases](https://github.com/michsethowusu/kasanoma/releases).
 
-> More Ghanaian languages will be added soon — including Ewe, Ga, Dagbani, and others.  
+> More African languages will be added soon.  
 > We welcome community contributions.
 
 ---
@@ -47,12 +47,11 @@ Here’s how to run them without internet access:
 
 ## Contributing
 
-We welcome:  
-- New TTS voices for Ghanaian languages  
-- Improved datasets and phoneme dictionaries  
-- Audio quality testing and pronunciation feedback  
+We welcome contributions in the form of:  
+- Training new models for other languages of Africa or finetuning the released models. All the knowledge from training models is open source and will be shared freely to support you.  
+- Audio quality testing and pronunciation feedback.  
 
-To contribute, please open an issue or submit a pull request.
+To contribute, please contact me on [LinkedIn](https://www.linkedin.com/in/mich-seth-owusu).
 
 ---
 
