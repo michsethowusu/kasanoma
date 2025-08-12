@@ -49,9 +49,10 @@ Here’s how to run them without internet access:
 
 We welcome contributions in the form of:  
 - Training new models for other languages of Africa or finetuning the released models. All the knowledge from training models is open source and will be shared freely to support you.  
-- Audio quality testing and pronunciation feedback.  
+- Audio quality testing and pronunciation feedback.
+- Add scripts for using the models offline
 
-To contribute, please contact me on [LinkedIn](https://www.linkedin.com/in/mich-seth-owusu).
+To contribute, you can make a pull request, post in the issues or contact me on [LinkedIn](https://www.linkedin.com/in/mich-seth-owusu).
 
 ---
 
