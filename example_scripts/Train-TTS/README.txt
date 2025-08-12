@@ -1,0 +1,1 @@
+You can use this notebook with our dataset packages to finetune our released models. Or you can also train from scratch. It has been teested using google collab but should work in other platforms that support running notebooks.
