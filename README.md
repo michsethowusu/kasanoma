@@ -11,7 +11,7 @@ You can also try out the models live online at our [demo site](https://kasanoma.
 
 ## Available Models
 
-## Currently Supported Languages
+We currently provide offline TTS models for the following languages:
 
 - **Twi (Akan)** — spoken mainly in **Ghana**, by about **9–10 million** native speakers and over **17 million** total speakers.  
 - **Chichewa** — spoken mainly in **Malawi**, **Zambia**, **Mozambique**, and **Zimbabwe**, by about **12 million** native speakers and over **18 million** total speakers.
