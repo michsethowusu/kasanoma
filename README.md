@@ -11,11 +11,15 @@ You can also try out the models live online at our [demo site](https://kasanoma.
 
 ## Available Models
 
-Currently, we provide a model for **Twi (Akan)**:
-You can download the model from [releases](https://github.com/michsethowusu/kasanoma/releases).
+## Currently Supported Languages
+
+- **Twi (Akan)** — spoken mainly in **Ghana**, by about **9–10 million** native speakers and over **17 million** total speakers.  
+- **Chichewa** — spoken mainly in **Malawi**, **Zambia**, **Mozambique**, and **Zimbabwe**, by about **12 million** native speakers and over **18 million** total speakers.
+
+You can download the models from [releases](https://github.com/michsethowusu/kasanoma/releases).
 
 > More African languages will be added soon.  
-> We welcome community contributions.
+> **Languages in the pipeline:** Makhuwa — spoken mainly in **Mozambique**, by about **8 million** speakers.
 
 ---
 
