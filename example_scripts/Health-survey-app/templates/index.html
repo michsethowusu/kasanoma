@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voice-Only Health Diagnostic App</title>
+<style>
+  body {
+    background-color: #222;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  .app-screen {
+    background-color: black;
+    width: 320px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    border: 3px solid #666;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  .control-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  .btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .green { background-color: #4CAF50; }
+  .red { background-color: #F44336; }
+</style>
+</head>
+<body>
+  <div class="app-screen" id="appScreen" aria-live="polite">Initializing...</div>
+  <div class="control-buttons">
+    <button class="btn green" aria-label="Yes">✔</button>
+    <button class="btn red" aria-label="No">✖</button>
+  </div>
+
+  <script>
+    let currentAudio = null;
+    let buttons = document.querySelectorAll('.control-buttons .btn');
+    
+    // This constant is used to identify the "ready to begin" screen
+    const READY_CHECK_TEXT = "Are you ready to begin? Press the green button for yes and the red button for no.";
+
+    // Initialize session and play welcome message
+    function initApp() {
+      // Start the state machine by fetching the first state
+      loadNextState();
+    }
+    
+    // Play audio by key
+    function playAudio(key) {
+      return new Promise((resolve) => {
+        if (currentAudio) {
+          currentAudio.pause();
+        }
+        
+        currentAudio = new Audio(`/audio/${key}`);
+        currentAudio.play();
+        
+        currentAudio.addEventListener('ended', () => {
+          resolve();
+        });
+        
+        currentAudio.addEventListener('error', () => {
+          console.error(`Error playing audio: ${key}`);
+          resolve();
+        });
+      });
+    }
+    
+    // Load next state from the server
+    function loadNextState() {
+      // Disable buttons while audio is playing
+      buttons.forEach(button => button.disabled = true);
+
+      // Fix: Ensure the fetch URL is relative to the root
+      fetch('/next_state')
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('appScreen').innerText = data.text;
+          
+          // Play the audio for the current state
+          playAudio(data.audio_key).then(() => {
+            // Re-enable buttons after audio finishes
+            buttons.forEach(button => button.disabled = false);
+
+            if (data.type === 'end') {
+              // Disable buttons at the end of the app
+              buttons.forEach(button => button.disabled = true);
+            } else if (data.type === 'welcome' || data.type === 'summary') {
+              // Automatically move to the next state after welcome/summary
+              loadNextState();
+            }
+          });
+        });
+    }
+    
+    // Handle user answer
+    function handleAnswer(answer) {
+      // Disable buttons to prevent double-clicking
+      buttons.forEach(button => button.disabled = true);
+
+      // Fix: Ensure the fetch URL is relative to the root
+      fetch('/answer', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ answer: answer })
+      })
+      .then(() => {
+        // Check if the user is answering the ready check question with 'Yes'
+        const screenText = document.getElementById('appScreen').innerText;
+        if (answer === 'Yes' && screenText.includes("Are you ready to begin?")) {
+          // Add a 2-second delay before proceeding to the first question
+          setTimeout(loadNextState, 2000);
+        } else {
+          // For all other answers or states, proceed immediately
+          loadNextState();
+        }
+      });
+    }
+    
+    // Event listeners
+    document.querySelector('.green').addEventListener('click', () => handleAnswer('Yes'));
+    document.querySelector('.red').addEventListener('click', () => handleAnswer('No'));
+    
+    // Initialize app when page loads
+    window.addEventListener('DOMContentLoaded', initApp);
+  </script>
+</body>
+</html>
