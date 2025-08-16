@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kasanoma TTS Demo</title>
+  <title>Kasanoma TTS</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -51,9 +51,13 @@
   <div class="container py-4">
     <header class="text-center mb-4">
       <h1 class="fw-semibold text-primary">
-        Kasanoma TTS Demo
+        Kasanoma TTS
       </h1>
-      <p class="text-muted">Multi-language text-to-speech conversion</p>
+      <p class="text-muted">
+        This platform is aimed at testing offline-first TTS models that are built by the Kasanoma project. 
+        The models are trained for a limited amount of time due to GPU resource availability but they 
+        can be finetuned for better results using our ready-to-use finetuning packages.
+      </p>
     </header>
 
     <div class="card shadow-sm p-4">
@@ -90,8 +94,7 @@
         <div class="tab-pane fade show active" id="textTab">
           <div class="mb-3">
             <label for="text-input" class="form-label">Enter text to convert to speech:</label>
-            <textarea id="text-input" class="form-control" rows="6" placeholder="Select a language to see sample text...">
-            </textarea>
+            <textarea id="text-input" class="form-control" rows="6" placeholder="Select a language to see sample text..."></textarea>
             <div class="form-text">
               <i class="fas fa-info-circle me-1"></i>
               Tip: Press Ctrl+Enter to convert quickly
