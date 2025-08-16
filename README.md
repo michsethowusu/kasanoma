@@ -60,7 +60,7 @@ We welcome contributions in the form of:
 - Audio quality testing and pronunciation feedback.
 - Add scripts for using the models offline
 
-To contribute, you can make a pull request, post in the issues or contact me on [LinkedIn](https://www.linkedin.com/in/mich-seth-owusu).
+If you have any questions or would like to contribute, our email is kasanoma@kasanoma.org.
 
 ---
 
