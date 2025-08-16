@@ -5,7 +5,7 @@ With Kasanoma models, you can generate natural-sounding voices entirely on your 
 
 All models in this project are built using [Piper](https://github.com/rhasspy/piper), a fast, lightweight neural TTS system that runs efficiently on laptops, desktops, Raspberry Pi, and other low-resource devices.
 
-You can also try out the models live online at our [demo site](https://kasanoma.onrender.com/). The models are trained for a limited amount of time due to GPU resource availability but they can be finetuned for better results using our ready to use finetuning packages.
+You can also try out the models live online at our [demo site](https://kasanoma.onrender.com/). The models are trained for a limited amount of time due to GPU resource availability but they can be finetuned for better results using the training checkpoints which are also published.
 
 ---
 
@@ -13,13 +13,17 @@ You can also try out the models live online at our [demo site](https://kasanoma.
 
 We currently provide offline TTS models for the following languages:
 
-- **Twi (Akan)** — spoken mainly in **Ghana**, by about **9–10 million** native speakers and over **17 million** total speakers.  
-- **Chichewa** — spoken mainly in **Malawi**, **Zambia**, **Mozambique**, and **Zimbabwe**, by about **12 million** native speakers and over **18 million** total speakers.
+| Language       | Main Countries                                              | Native Speakers | Total Speakers |
+|----------------|-------------------------------------------------------------|-----------------|----------------|
+| **Twi (Akan)** | **Ghana**                                                   | ~9–10 million   | ~17 million    |
+| **Chichewa**   | **Malawi**, **Zambia**, **Mozambique**, **Zimbabwe**        | ~12 million     | ~18 million    |
+| **Makhuwa**    | **Mozambique**                                              | ~7–8 million    | ~8 million     |
+
 
 You can download the models from [releases](https://github.com/michsethowusu/kasanoma/releases).
 
 > More African languages will be added soon.  
-> **Languages in the pipeline:** Makhuwa — spoken mainly in **Mozambique**, by about **8 million** speakers.
+> **Languages in the pipeline:** Kikuyu, Tshiluba, Amharic, Vai.
 
 ---
 
