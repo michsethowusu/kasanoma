@@ -15,9 +15,9 @@ We currently provide offline TTS models for the following languages:
 
 | Language       | Main Countries                                              | Native Speakers | Total Speakers |
 |----------------|-------------------------------------------------------------|-----------------|----------------|
-| **Twi (Akan)** | **Ghana**                                                   | ~9–10 million   | ~17 million    |
-| **Chichewa**   | **Malawi**, **Zambia**, **Mozambique**, **Zimbabwe**        | ~12 million     | ~18 million    |
-| **Makhuwa**    | **Mozambique**                                              | ~7–8 million    | ~8 million     |
+| Twi (Akan) | Ghana                                                   | ~9–10 million   | ~17 million    |
+| Chichewa   | Malawi, Zambia, Mozambique, Zimbabwe        | ~12 million     | ~18 million    |
+| Makhuwa    | Mozambique                                              | ~7–8 million    | ~8 million     |
 
 
 You can download the models from [releases](https://github.com/michsethowusu/kasanoma/releases).
