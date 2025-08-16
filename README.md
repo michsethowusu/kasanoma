@@ -1,21 +1,25 @@
 # Kasanoma – Offline TTS Models for languages of Africa
 
-**Kasanoma** is an open-source initiative dedicated to building and sharing **offline** high-quality **Text-to-Speech (TTS)** models for languages of Africa.  
+**Kasanoma** is an open-source initiative dedicated to building and sharing **offline** **Text-to-Speech (TTS)** models for languages of Africa.  
 With Kasanoma models, you can generate natural-sounding voices entirely on your local device — **no internet connection required**.
 
 All models in this project are built using [Piper](https://github.com/rhasspy/piper), a fast, lightweight neural TTS system that runs efficiently on laptops, desktops, Raspberry Pi, and other low-resource devices.
 
-You can also try out the models live online at our [demo site](https://kasanoma.onrender.com/).
+You can also try out the models live online at our [demo site](https://kasanoma.onrender.com/). The models are trained for a limited amount of time due to GPU resource availability but they can be finetuned for better results using our ready to use finetuning packages.
 
 ---
 
 ## Available Models
 
-Currently, we provide a model for **Twi (Akan)**:
-You can download the model from [releases](https://github.com/michsethowusu/kasanoma/releases).
+We currently provide offline TTS models for the following languages:
+
+- **Twi (Akan)** — spoken mainly in **Ghana**, by about **9–10 million** native speakers and over **17 million** total speakers.  
+- **Chichewa** — spoken mainly in **Malawi**, **Zambia**, **Mozambique**, and **Zimbabwe**, by about **12 million** native speakers and over **18 million** total speakers.
+
+You can download the models from [releases](https://github.com/michsethowusu/kasanoma/releases).
 
 > More African languages will be added soon.  
-> We welcome community contributions.
+> **Languages in the pipeline:** Makhuwa — spoken mainly in **Mozambique**, by about **8 million** speakers.
 
 ---
 
