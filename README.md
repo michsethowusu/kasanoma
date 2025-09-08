@@ -5,7 +5,7 @@ With Kasanoma models, you can generate natural-sounding voices entirely on your 
 
 All models in this project are built using [Piper](https://github.com/rhasspy/piper), a fast, lightweight neural TTS system that runs efficiently on laptops, desktops, Raspberry Pi, and other low-resource devices.
 
-You can also try out the models live online at our [demo site](https://kasanoma.onrender.com/). The models are trained for a limited amount of time due to GPU resource availability but they can be finetuned for better results using the training checkpoints which are also published.
+You can also try out the models live online at our [demo site]([https://kasanoma.onrender.com](https://kasanoma-demo.onrender.com/). The models are trained for a limited amount of time due to GPU resource availability but they can be finetuned for better results using the training checkpoints which are also published.
 
 ---
 
